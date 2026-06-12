@@ -1,4 +1,4 @@
-# Stochastic Interest-Rate Modelling & Prediction — the CIR Model
+# Stochastic Interest-Rate Modelling & Prediction, the CIR Model
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
@@ -9,7 +9,7 @@ Implementing, calibrating, and stress-testing the **Cox–Ingersoll–Ross (CIR)
 yield-curve data, then reconstructing an entire yield curve **from a single input — the 3-Month rate** — and
 scoring it strictly out-of-sample.
 
-> *Finance Club, IIT Roorkee — Open Projects 2026.* The official competition deliverable is the Colab notebook;
+> *Launched by Finance Club, IIT Roorkee as Open Projects 2026.* The official competition deliverable is the Colab notebook;
 > this repository is the version-controlled showcase. **The notebook is the single source of truth**;
 > [`src/cir.py`](src/cir.py) is the same validated logic packaged for reuse.
 
@@ -19,8 +19,8 @@ scoring it strictly out-of-sample.
 
 | Model | Out-of-sample pooled R² | RMSE | Verdict |
 |---|---|---|---|
-| **Base CIR** (cross-sectional calibration) | **0.8929** | 22.0 bps | ✅ **clears the 0.85 gate** |
-| CIR++ (frozen deterministic shift) | 0.8355 | — | ⚠️ overfits — base CIR generalises better |
+| **Base CIR** (cross-sectional calibration) | **0.8929** | 22.0 bps |  **clears the 0.85 gate** |
+| CIR++ (frozen deterministic shift) | 0.8355 |overfits — base CIR generalises better |
 
 **Per-maturity (base CIR, out-of-sample):**
 
